@@ -14,7 +14,8 @@
     "clean": "del /f /q dist\\*",
     "build:js": "babel src --out-dir dist",
     "test": "jasmine",
-    "exportTest": "babel expo --out-dir expo_out"
+    "exportTest": "babel expo --out-dir expo_out",
+    "mocha": "mocha --compilers js:babel-register"
   },
   "author": "",
   "license": "ISC",
@@ -29,11 +30,13 @@
     "babel-register": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
+    "chai": "^3.5.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "jasmine": "^2.5.3",
+    "mocha": "^3.2.0",
     "webpack": "^2.3.3"
   },
   "dependencies": {
